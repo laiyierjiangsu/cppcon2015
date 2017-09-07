@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C319D1D9-2532-40B7-ABD1-E6118AA0EF1E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestECS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Other\Boilerplate\App.hpp" />
+    <ClInclude Include="..\Other\Boilerplate\AppRunner.hpp" />
+    <ClInclude Include="..\Other\Boilerplate\Boilerplate.hpp" />
+    <ClInclude Include="..\Other\ecs\Config\ComponentConfig.hpp" />
+    <ClInclude Include="..\Other\ecs\Config\Config.hpp" />
+    <ClInclude Include="..\Other\ecs\Config\SignatureConfig.hpp" />
+    <ClInclude Include="..\Other\ecs\Config\SystemConfig.hpp" />
+    <ClInclude Include="..\Other\ecs\Config\TagConfig.hpp" />
+    <ClInclude Include="..\Other\ecs\Core\Core.hpp" />
+    <ClInclude Include="..\Other\ecs\Core\Fwd.hpp" />
+    <ClInclude Include="..\Other\ecs\Core\Typedefs.hpp" />
+    <ClInclude Include="..\Other\ecs\ecs.hpp" />
+    <ClInclude Include="..\Other\ecs\Elements\Clause.hpp" />
+    <ClInclude Include="..\Other\ecs\Elements\Component.hpp" />
+    <ClInclude Include="..\Other\ecs\Elements\Elements.hpp" />
+    <ClInclude Include="..\Other\ecs\Elements\Signature.hpp" />
+    <ClInclude Include="..\Other\ecs\Elements\System.hpp" />
+    <ClInclude Include="..\Other\ecs\Elements\Tag.hpp" />
+    <ClInclude Include="..\Other\ecs\Handle\FatHandle.hpp" />
+    <ClInclude Include="..\Other\ecs\Handle\Handle.hpp" />
+    <ClInclude Include="..\Other\ecs\Handle\SlimHandle.hpp" />
+    <ClInclude Include="..\Other\ecs\Interface.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\BitsetStorage.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\Entity.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\EntityCache.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\HandleData.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\Manager.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\ManagerImpl.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\Settings.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\SignatureBitsets.hpp" />
+    <ClInclude Include="..\Other\ecs\Manager\SystemMetadata.hpp" />
+    <ClInclude Include="..\Other\ecs\Storage\Map.hpp" />
+    <ClInclude Include="..\Other\ecs\Storage\Storage.hpp" />
+    <ClInclude Include="..\Other\ecs\Storage\StorageSearch.hpp" />
+    <ClInclude Include="..\Other\ecs\Storage\Vector.hpp" />
+    <ClInclude Include="..\Other\ecs\Traits\TagTraits.hpp" />
+    <ClInclude Include="..\Other\ecs\Traits\Traits.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\BitsetSize.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\GrowableArray.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\Macros.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MetaFor.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\All.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Concat.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\ContainsAll.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Count.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Filter.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\IndexOf.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Interface.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Map.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\MPL.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Rename.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Repeat.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Tests.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Type.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\TypeList.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\TypeListOps.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Unique.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\StrongTypedef.hpp" />
+    <ClInclude Include="..\Other\ecs\Utils\Utils.hpp" />
+    <ClInclude Include="..\Other\Other.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\0_ECS\p0.cpp" />
+    <ClCompile Include="..\0_ECS\p1.cpp" />
+    <ClCompile Include="..\0_ECS\p2.cpp" />
+    <ClCompile Include="..\0_ECS\p3.cpp" />
+    <ClCompile Include="..\0_ECS\p4.cpp" />
+    <ClCompile Include="..\0_ECS\p5.cpp" />
+    <ClCompile Include="..\0_ECS\p6.cpp" />
+    <ClCompile Include="..\0_ECS\p7.cpp" />
+    <ClCompile Include="..\1_ForArgs\chain.cpp" />
+    <ClCompile Include="..\1_ForArgs\p0.cpp" />
+    <ClCompile Include="..\1_ForArgs\p1.cpp" />
+    <ClCompile Include="..\1_ForArgs\p2.cpp" />
+    <ClCompile Include="..\1_ForArgs\p3.cpp" />
+    <ClCompile Include="..\1_ForArgs\p4.cpp" />
+    <ClCompile Include="..\1_ForArgs\p5.cpp" />
+    <ClCompile Include="..\1_ForArgs\p6.cpp" />
+    <ClCompile Include="..\1_ForArgs\p7.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestECS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\0_ECS\compilefastprimus.sh" />
+    <None Include="..\0_ECS\slides.pdf" />
+    <None Include="..\1_ForArgs\compile.sh" />
+    <None Include="..\1_ForArgs\compilefast.sh" />
+    <None Include="..\Other\ecs\Manager\ManagerImpl.inl" />
+    <None Include="..\Other\ecs\Manager\ManagerImplComponents.inl" />
+    <None Include="..\Other\ecs\Manager\ManagerImplGrow.inl" />
+    <None Include="..\Other\ecs\Manager\ManagerImplMatches.inl" />
+    <None Include="..\Other\ecs\Manager\ManagerImplRefresh.inl" />
+    <None Include="..\Other\ecs\Manager\ManagerImplTags.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\0_ECS\p1_d0.jpg" />
+    <Image Include="..\0_ECS\p2_d0.jpg" />
+    <Image Include="..\0_ECS\p3_d0.jpg" />
+    <Image Include="..\0_ECS\p3_d1.jpg" />
+    <Image Include="..\0_ECS\p4_d0.jpg" />
+    <Image Include="..\0_ECS\p4_d1.jpg" />
+    <Image Include="..\0_ECS\p4_d2.jpg" />
+    <Image Include="..\0_ECS\p5_d0.jpg" />
+    <Image Include="..\0_ECS\p6_d0.jpg" />
+    <Image Include="..\1_ForArgs\p0_d0.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

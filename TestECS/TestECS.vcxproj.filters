@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{e1fc0518-a554-4ca0-a597-aa8ff08feffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\1-Argus">
+      <UniqueIdentifier>{b42ff458-f36d-4e9c-b448-f6302230626c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\0-ECS">
+      <UniqueIdentifier>{4c7f0f9e-063f-4354-bbf8-d47b18cc5b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other">
+      <UniqueIdentifier>{c9571c45-a8a7-4a5c-bb67-215d41df5a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\Boilerplate">
+      <UniqueIdentifier>{14829023-e6cd-4311-a4b8-1d343e4b4977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS">
+      <UniqueIdentifier>{7e4af90f-9ff1-4ff7-9a8c-710483959188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Config">
+      <UniqueIdentifier>{311a9e3f-7cdf-43fb-8830-366c2b1ddd15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Core">
+      <UniqueIdentifier>{d2c7689c-bf61-4296-b9f7-6dad24c31095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Element">
+      <UniqueIdentifier>{a924de30-1f1d-4ac0-9426-4ce385ffd6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Handle">
+      <UniqueIdentifier>{ee150309-5e6a-453f-ae29-c77e7129d79a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Manager">
+      <UniqueIdentifier>{02dd77a7-e0bc-4785-a4b4-1f24db37607e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Storage">
+      <UniqueIdentifier>{3b44a54e-dc09-404c-9f46-95c46a5eb51b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\TagTraits">
+      <UniqueIdentifier>{1943426e-ac1b-440e-bce4-5e7540dccc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Utils">
+      <UniqueIdentifier>{d12500bd-cc92-4bf8-8cfa-4f9f057fbcc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Other\ECS\Utils\MPL">
+      <UniqueIdentifier>{cccb29bb-d195-405e-866a-47fc0481105c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\Other.hpp">
+      <Filter>ECS\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\Boilerplate\App.hpp">
+      <Filter>ECS\Other\Boilerplate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\Boilerplate\AppRunner.hpp">
+      <Filter>ECS\Other\Boilerplate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\Boilerplate\Boilerplate.hpp">
+      <Filter>ECS\Other\Boilerplate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\ecs.hpp">
+      <Filter>ECS\Other\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Interface.hpp">
+      <Filter>ECS\Other\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Config\ComponentConfig.hpp">
+      <Filter>ECS\Other\ECS\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Config\Config.hpp">
+      <Filter>ECS\Other\ECS\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Config\SignatureConfig.hpp">
+      <Filter>ECS\Other\ECS\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Config\SystemConfig.hpp">
+      <Filter>ECS\Other\ECS\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Config\TagConfig.hpp">
+      <Filter>ECS\Other\ECS\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Core\Core.hpp">
+      <Filter>ECS\Other\ECS\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Core\Fwd.hpp">
+      <Filter>ECS\Other\ECS\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Core\Typedefs.hpp">
+      <Filter>ECS\Other\ECS\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Elements\Clause.hpp">
+      <Filter>ECS\Other\ECS\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Elements\Component.hpp">
+      <Filter>ECS\Other\ECS\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Elements\Elements.hpp">
+      <Filter>ECS\Other\ECS\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Elements\Signature.hpp">
+      <Filter>ECS\Other\ECS\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Elements\System.hpp">
+      <Filter>ECS\Other\ECS\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Elements\Tag.hpp">
+      <Filter>ECS\Other\ECS\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Handle\FatHandle.hpp">
+      <Filter>ECS\Other\ECS\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Handle\Handle.hpp">
+      <Filter>ECS\Other\ECS\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Handle\SlimHandle.hpp">
+      <Filter>ECS\Other\ECS\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\BitsetStorage.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\Entity.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\EntityCache.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\HandleData.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\Manager.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\ManagerImpl.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\Settings.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\SignatureBitsets.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Manager\SystemMetadata.hpp">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Storage\Map.hpp">
+      <Filter>ECS\Other\ECS\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Storage\Storage.hpp">
+      <Filter>ECS\Other\ECS\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Storage\StorageSearch.hpp">
+      <Filter>ECS\Other\ECS\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Storage\Vector.hpp">
+      <Filter>ECS\Other\ECS\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Traits\TagTraits.hpp">
+      <Filter>ECS\Other\ECS\TagTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Traits\Traits.hpp">
+      <Filter>ECS\Other\ECS\TagTraits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\BitsetSize.hpp">
+      <Filter>ECS\Other\ECS\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\GrowableArray.hpp">
+      <Filter>ECS\Other\ECS\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\Macros.hpp">
+      <Filter>ECS\Other\ECS\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MetaFor.hpp">
+      <Filter>ECS\Other\ECS\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\StrongTypedef.hpp">
+      <Filter>ECS\Other\ECS\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\Utils.hpp">
+      <Filter>ECS\Other\ECS\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\All.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Concat.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\ContainsAll.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Count.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Filter.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\IndexOf.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Interface.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Map.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\MPL.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Rename.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Repeat.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Tests.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Type.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\TypeList.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\TypeListOps.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Other\ecs\Utils\MPL\Unique.hpp">
+      <Filter>ECS\Other\ECS\Utils\MPL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestECS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\chain.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p0.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p1.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p2.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p3.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p4.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p5.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p6.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\1_ForArgs\p7.cpp">
+      <Filter>ECS\1-Argus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p0.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p1.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p2.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p3.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p4.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p5.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p6.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\0_ECS\p7.cpp">
+      <Filter>ECS\0-ECS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\1_ForArgs\compile.sh">
+      <Filter>ECS\1-Argus</Filter>
+    </None>
+    <None Include="..\1_ForArgs\compilefast.sh">
+      <Filter>ECS\1-Argus</Filter>
+    </None>
+    <None Include="..\0_ECS\compilefastprimus.sh">
+      <Filter>ECS\0-ECS</Filter>
+    </None>
+    <None Include="..\0_ECS\slides.pdf">
+      <Filter>ECS\0-ECS</Filter>
+    </None>
+    <None Include="..\Other\ecs\Manager\ManagerImpl.inl">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </None>
+    <None Include="..\Other\ecs\Manager\ManagerImplComponents.inl">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </None>
+    <None Include="..\Other\ecs\Manager\ManagerImplGrow.inl">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </None>
+    <None Include="..\Other\ecs\Manager\ManagerImplMatches.inl">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </None>
+    <None Include="..\Other\ecs\Manager\ManagerImplRefresh.inl">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </None>
+    <None Include="..\Other\ecs\Manager\ManagerImplTags.inl">
+      <Filter>ECS\Other\ECS\Manager</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\1_ForArgs\p0_d0.png">
+      <Filter>ECS\1-Argus</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p1_d0.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p2_d0.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p3_d0.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p3_d1.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p4_d0.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p4_d1.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p4_d2.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p5_d0.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+    <Image Include="..\0_ECS\p6_d0.jpg">
+      <Filter>ECS\0-ECS</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
